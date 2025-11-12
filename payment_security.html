@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+
+<html class="light" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>JOEGOL - Paiements Internationaux Sécurisés</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#f28b0c",
+              "background-light": "#FFFFFF",
+              "background-dark": "#1f2937",
+              "text-light": "#333333",
+              "text-dark": "#f5f5f5",
+              "card-light": "#F5F5F5",
+              "card-dark": "#374151",
+              "border-light": "#e5e7eb",
+              "border-dark": "#4b5563"
+            },
+            fontFamily: {
+              "display": ["Inter", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.5rem", "lg": "0.75rem", "xl": "1rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+    </style>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<div class="flex flex-1 justify-center py-5 sm:px-10 lg:px-20 xl:px-40">
+<div class="layout-content-container flex flex-col w-full max-w-5xl flex-1">
+<!-- TopNavBar -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-border-light dark:border-border-dark px-4 sm:px-10 py-4">
+<div class="flex items-center gap-4">
+<div class="size-6 text-primary">
+<svg fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w.org/2000/svg">
+<path clip-rule="evenodd" d="M24 4H42V17.3333V30.6667H24V44H6V30.6667V17.3333H24V4Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-text-light dark:text-text-dark text-xl font-bold leading-tight tracking-[-0.015em]">JOEGOL</h2>
+</div>
+<div class="hidden lg:flex flex-1 justify-end gap-8">
+<div class="flex items-center gap-9">
+<a class="text-text-light dark:text-text-dark text-sm font-medium leading-normal" href="#">Accueil</a>
+<a class="text-text-light dark:text-text-dark text-sm font-medium leading-normal" href="#">Services</a>
+<a class="text-text-light dark:text-text-dark text-sm font-medium leading-normal" href="#">À Propos</a>
+<a class="text-primary text-sm font-bold leading-normal" href="#">Paiement</a>
+<a class="text-text-light dark:text-text-dark text-sm font-medium leading-normal" href="#">Contact</a>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Obtenir un devis</span>
+</button>
+</div>
+<button class="lg:hidden p-2 rounded-md text-text-light dark:text-text-dark">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</header>
+<!-- HeroSection -->
+<div class="@container">
+<div class="flex flex-col gap-6 px-4 py-16 text-center items-center">
+<div class="flex flex-col gap-4 max-w-3xl">
+<h1 class="text-text-light dark:text-text-dark text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]">
+                                    Paiements Internationaux Sécurisés et Flexibles
+                                </h1>
+<h2 class="text-text-light/80 dark:text-text-dark/80 text-base font-normal leading-normal @[480px]:text-lg @[480px]:font-normal @[480px]:leading-normal">
+                                    Chez JOEGOL, nous nous engageons à sécuriser vos transactions et offrons diverses solutions de paiement, y compris des options pour ceux qui n'ont pas de carte bancaire.
+                                </h2>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] mt-4">
+<span class="truncate">Contacter un conseiller</span>
+</button>
+</div>
+</div>
+<!-- SectionHeader -->
+<h2 class="text-text-light dark:text-text-dark text-[28px] font-bold leading-tight tracking-[-0.015em] px-4 pb-4 pt-8 text-center">Nos Méthodes de Paiement</h2>
+<!-- TextGrid -->
+<div class="grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-6 p-4">
+<div class="flex flex-1 gap-4 rounded-lg bg-card-light dark:bg-card-dark p-6 flex-col">
+<span class="material-symbols-outlined text-primary text-4xl">account_balance</span>
+<div class="flex flex-col gap-1">
+<h3 class="text-text-light dark:text-text-dark text-lg font-bold leading-tight">Virement Bancaire International</h3>
+<p class="text-text-light/70 dark:text-text-dark/70 text-sm font-normal leading-normal">Une méthode fiable et standard pour les transactions directes de banque à banque.</p>
+</div>
+</div>
+<div class="flex flex-1 gap-4 rounded-lg bg-card-light dark:bg-card-dark p-6 flex-col">
+<span class="material-symbols-outlined text-primary text-4xl">smartphone</span>
+<div class="flex flex-col gap-1">
+<h3 class="text-text-light dark:text-text-dark text-lg font-bold leading-tight">Partenaires Mobile Money</h3>
+<p class="text-text-light/70 dark:text-text-dark/70 text-sm font-normal leading-normal">Payez facilement en utilisant des services de mobile money de confiance dans votre région.</p>
+</div>
+</div>
+<div class="flex flex-1 gap-4 rounded-lg bg-card-light dark:bg-card-dark p-6 flex-col">
+<span class="material-symbols-outlined text-primary text-4xl">credit_card</span>
+<div class="flex flex-col gap-1">
+<h3 class="text-text-light dark:text-text-dark text-lg font-bold leading-tight">Passerelle en Ligne Sécurisée</h3>
+<p class="text-text-light/70 dark:text-text-dark/70 text-sm font-normal leading-normal">Utilisez notre portail sécurisé pour divers types de paiement avec des fournisseurs certifiés.</p>
+</div>
+</div>
+</div>
+<!-- FeatureSection -->
+<div class="flex flex-col gap-10 px-4 py-16 @container">
+<div class="flex flex-col gap-4 text-center items-center">
+<h2 class="text-text-light dark:text-text-dark tracking-light text-[28px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-2xl">
+                                Votre Sécurité est Notre Priorité
+                            </h2>
+<p class="text-text-light/80 dark:text-text-dark/80 text-base font-normal leading-normal max-w-3xl">
+                                Nous mettons en œuvre des mesures de sécurité robustes, y compris le chiffrement des données et des protocoles sécurisés, et nous nous associons exclusivement à des fournisseurs de paiement certifiés pour protéger vos transactions.
+                            </p>
+</div>
+<div class="grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-6 p-0">
+<div class="flex flex-1 gap-4 rounded-lg border border-border-light dark:border-border-dark bg-transparent p-6 flex-col items-center text-center">
+<span class="material-symbols-outlined text-primary text-4xl">lock</span>
+<div class="flex flex-col gap-1">
+<h3 class="text-text-light dark:text-text-dark text-lg font-bold leading-tight">Certifié SSL</h3>
+<p class="text-text-light/70 dark:text-text-dark/70 text-sm font-normal leading-normal">Notre site web est protégé par un certificat SSL pour sécuriser toutes les données.</p>
+</div>
+</div>
+<div class="flex flex-1 gap-4 rounded-lg border border-border-light dark:border-border-dark bg-transparent p-6 flex-col items-center text-center">
+<span class="material-symbols-outlined text-primary text-4xl">enhanced_encryption</span>
+<div class="flex flex-col gap-1">
+<h3 class="text-text-light dark:text-text-dark text-lg font-bold leading-tight">Chiffrement des Données</h3>
+<p class="text-text-light/70 dark:text-text-dark/70 text-sm font-normal leading-normal">Vos informations sensibles sont chiffrées de bout en bout pour une sécurité maximale.</p>
+</div>
+</div>
+<div class="flex flex-1 gap-4 rounded-lg border border-border-light dark:border-border-dark bg-transparent p-6 flex-col items-center text-center">
+<span class="material-symbols-outlined text-primary text-4xl">verified_user</span>
+<div class="flex flex-col gap-1">
+<h3 class="text-text-light dark:text-text-dark text-lg font-bold leading-tight">Partenaires de Confiance</h3>
+<p class="text-text-light/70 dark:text-text-dark/70 text-sm font-normal leading-normal">Nous collaborons avec des services de paiement sécurisés et reconnus mondialement.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- FAQ Section -->
+<div class="px-4 py-16">
+<div class="max-w-3xl mx-auto text-center">
+<h2 class="text-text-light dark:text-text-dark text-[28px] font-bold leading-tight tracking-[-0.015em] mb-8">Questions Fréquemment Posées</h2>
+</div>
+<div class="max-w-3xl mx-auto space-y-4">
+<details class="group p-6 rounded-lg bg-card-light dark:bg-card-dark cursor-pointer">
+<summary class="flex items-center justify-between text-lg font-bold text-text-light dark:text-text-dark">
+                                    Quels sont les frais de transaction ?
+                                    <span class="transform transition-transform duration-300 group-open:rotate-45 material-symbols-outlined">add</span>
+</summary>
+<p class="mt-4 text-text-light/70 dark:text-text-dark/70">Les frais varient en fonction de la méthode de paiement choisie. Nous nous efforçons d'offrir les tarifs les plus compétitifs. Veuillez contacter un conseiller pour obtenir une estimation précise pour votre transaction.</p>
+</details>
+<details class="group p-6 rounded-lg bg-card-light dark:bg-card-dark cursor-pointer">
+<summary class="flex items-center justify-between text-lg font-bold text-text-light dark:text-text-dark">
+                                    Combien de temps prend une transaction ?
+                                    <span class="transform transition-transform duration-300 group-open:rotate-45 material-symbols-outlined">add</span>
+</summary>
+<p class="mt-4 text-text-light/70 dark:text-text-dark/70">Les délais de traitement dépendent de la méthode. Les paiements par Mobile Money sont généralement instantanés, tandis que les virements bancaires internationaux peuvent prendre de 2 à 5 jours ouvrables.</p>
+</details>
+<details class="group p-6 rounded-lg bg-card-light dark:bg-card-dark cursor-pointer">
+<summary class="flex items-center justify-between text-lg font-bold text-text-light dark:text-text-dark">
+                                    Comment puis-je payer sans carte bancaire ?
+                                    <span class="transform transition-transform duration-300 group-open:rotate-45 material-symbols-outlined">add</span>
+</summary>
+<p class="mt-4 text-text-light/70 dark:text-text-dark/70">Nous proposons des solutions alternatives comme les virements bancaires directs et les paiements via nos partenaires Mobile Money, qui ne nécessitent pas de carte bancaire pour effectuer une transaction.</p>
+</details>
+</div>
+</div>
+<!-- Footer -->
+<footer class="mt-16 border-t border-border-light dark:border-border-dark">
+<div class="container mx-auto px-4 py-8">
+<div class="flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+<div class="mb-4 md:mb-0">
+<h3 class="text-lg font-bold">JOEGOL</h3>
+<p class="text-sm text-text-light/70 dark:text-text-dark/70">Votre partenaire de confiance pour l'import-export.</p>
+</div>
+<div class="flex flex-col md:flex-row items-center gap-4 md:gap-8">
+<a class="text-sm hover:text-primary" href="#">Contact</a>
+<a class="text-sm hover:text-primary" href="#">Politique de confidentialité</a>
+<a class="text-sm hover:text-primary" href="#">Termes de service</a>
+</div>
+<div class="mt-4 md:mt-0">
+<p class="text-sm text-text-light/70 dark:text-text-dark/70">© 2024 JOEGOL. Tous droits réservés.</p>
+</div>
+</div>
+</div>
+</footer>
+</div>
+</div>
+</div>
+</div>
+</body></html>

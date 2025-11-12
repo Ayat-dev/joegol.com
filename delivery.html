@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<html class="light" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>JOEGOL - Comparatif Livraison Maritime et Aérienne</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f28b0c",
+                        "background-light": "#FFFFFF",
+                        "background-dark": "#1a1a1a",
+                        "foreground-light": "#333333",
+                        "foreground-dark": "#F0F0F0",
+                        "border-light": "#EAEAEA",
+                        "border-dark": "#333333",
+                        "card-light": "#F9F9F9",
+                        "card-dark": "#242424",
+                        "text-subtle-light": "#666666",
+                        "text-subtle-dark": "#AAAAAA"
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "0.75rem",
+                        "xl": "1rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<!-- TopNavBar -->
+<div class="flex flex-1 justify-center px-4 sm:px-8 md:px-10 lg:px-20 py-5">
+<div class="layout-content-container flex flex-col w-full max-w-6xl flex-1">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-border-light dark:border-border-dark px-4 sm:px-6 py-4">
+<div class="flex items-center gap-4 text-foreground-light dark:text-foreground-dark">
+<div class="size-6 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 4H42V17.3333V30.6667H24V44H6V30.6667V17.3333H24V4Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-xl font-bold leading-tight tracking-[-0.015em]">JOEGOL</h2>
+</div>
+<nav class="hidden lg:flex flex-1 justify-end gap-8">
+<div class="flex items-center gap-9">
+<a class="text-foreground-light dark:text-foreground-dark text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary transition-colors" href="#">Accueil</a>
+<a class="text-foreground-light dark:text-foreground-dark text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary transition-colors" href="#">Nos Services</a>
+<a class="text-foreground-light dark:text-foreground-dark text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary transition-colors" href="#">Suivi</a>
+<a class="text-foreground-light dark:text-foreground-dark text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary transition-colors" href="#">Contact</a>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-opacity-90 transition-colors">
+<span class="truncate">Obtenir un devis</span>
+</button>
+</nav>
+<button class="lg:hidden p-2 text-foreground-light dark:text-foreground-dark">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</header>
+<main class="flex flex-col gap-8 md:gap-12 lg:gap-16 py-12 md:py-20">
+<!-- PageHeading -->
+<div class="flex flex-wrap justify-center gap-3 p-4 text-center">
+<div class="flex w-full max-w-3xl flex-col items-center gap-3">
+<p class="text-foreground-light dark:text-foreground-dark text-4xl md:text-5xl font-black leading-tight tracking-[-0.033em]">Livraison Maritime ou Aérienne : La solution qui vous convient.</p>
+<p class="text-text-subtle-light dark:text-text-subtle-dark text-lg font-normal leading-normal">Comparez nos options et choisissez la livraison la plus adaptée à vos besoins et à votre budget.</p>
+</div>
+</div>
+<!-- PricingCards -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 px-4">
+<!-- Maritime Card -->
+<div class="flex flex-1 flex-col gap-6 rounded-xl border border-solid border-border-light dark:border-border-dark bg-card-light dark:bg-card-dark p-6 md:p-8 hover:shadow-lg transition-shadow duration-300">
+<div class="flex flex-col items-center text-center gap-4">
+<span class="material-symbols-outlined text-5xl text-primary">directions_boat</span>
+<h3 class="text-2xl font-bold text-foreground-light dark:text-foreground-dark">Fret Maritime</h3>
+<p class="text-xs font-medium leading-normal tracking-[0.015em] rounded-full bg-primary/20 text-primary px-3 py-1 text-center">Le plus économique</p>
+</div>
+<div class="flex flex-col gap-2 items-center text-center">
+<p class="text-text-subtle-light dark:text-text-subtle-dark text-sm">À partir de</p>
+<p class="flex items-baseline gap-2 text-foreground-light dark:text-foreground-dark">
+<span class="text-5xl font-black leading-tight tracking-[-0.033em]">72 000</span>
+<span class="text-lg font-bold leading-tight">FCFA</span>
+</p>
+</div>
+<div class="flex flex-col gap-3 text-foreground-light dark:text-foreground-dark text-sm">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-xl">check_circle</span>
+<span>Délai : <strong>3-4 mois</strong></span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-xl">check_circle</span>
+<span>Idéal pour les <strong>gros volumes</strong> et les budgets optimisés</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-xl">check_circle</span>
+<span>La solution la plus économique pour vos envois non urgents</span>
+</div>
+</div>
+<button class="mt-4 flex w-full min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-4 bg-primary/20 dark:bg-primary/30 text-primary text-base font-bold leading-normal tracking-[0.015em] hover:bg-primary/30 dark:hover:bg-primary/40 transition-colors">
+<span class="truncate">Obtenir un devis maritime</span>
+</button>
+</div>
+<!-- Air Card -->
+<div class="flex flex-1 flex-col gap-6 rounded-xl border-2 border-solid border-primary bg-background-light dark:bg-background-dark p-6 md:p-8 relative overflow-hidden shadow-lg">
+<div class="absolute top-0 right-0 bg-primary text-white text-xs font-bold uppercase tracking-wider px-6 py-1.5" style="clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%); transform: translateX(25%) rotate(45deg) translate(20px, -35px);">Populaire</div>
+<div class="flex flex-col items-center text-center gap-4">
+<span class="material-symbols-outlined text-5xl text-primary">flight_takeoff</span>
+<h3 class="text-2xl font-bold text-foreground-light dark:text-foreground-dark">Fret Aérien</h3>
+<p class="text-xs font-medium leading-normal tracking-[0.015em] rounded-full bg-primary/20 text-primary px-3 py-1 text-center">Le plus rapide</p>
+</div>
+<div class="flex flex-col gap-2 items-center text-center">
+<p class="text-text-subtle-light dark:text-text-subtle-dark text-sm">À partir de</p>
+<p class="flex items-baseline gap-2 text-foreground-light dark:text-foreground-dark">
+<span class="text-5xl font-black leading-tight tracking-[-0.033em]">260 000</span>
+<span class="text-lg font-bold leading-tight">FCFA</span>
+</p>
+</div>
+<div class="flex flex-col gap-3 text-foreground-light dark:text-foreground-dark text-sm">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-xl">check_circle</span>
+<span>Délai : <strong>environ 2 semaines</strong></span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-xl">check_circle</span>
+<span>La solution la plus rapide pour vos <strong>envois urgents</strong></span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-xl">check_circle</span>
+<span>Parfait pour les colis de valeur ou sensibles au temps</span>
+</div>
+</div>
+<button class="mt-4 flex w-full min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-4 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-opacity-90 transition-colors">
+<span class="truncate">Obtenir un devis aérien</span>
+</button>
+</div>
+</div>
+<!-- MetaText -->
+<div class="px-4">
+<p class="text-text-subtle-light dark:text-text-subtle-dark text-sm font-normal leading-normal text-center">Tarifs et délais à titre indicatif, basés sur un colis standard.</p>
+</div>
+<!-- CTASection -->
+<div class="px-4 py-10">
+<div class="flex flex-col items-center justify-end gap-6 text-center">
+<div class="flex flex-col gap-2">
+<h2 class="text-foreground-light dark:text-foreground-dark tracking-tight text-3xl font-bold leading-tight md:text-4xl md:font-black md:tracking-[-0.033em]">Prêt à expédier ?</h2>
+<p class="text-foreground-light dark:text-foreground-dark text-base font-normal leading-normal max-w-xl">Contactez nos experts pour obtenir une cotation personnalisée et précise, adaptée à votre marchandise et votre destination.</p>
+</div>
+<div class="flex justify-center">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-opacity-90 transition-colors">
+<span class="truncate">Demander une cotation personnalisée</span>
+</button>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+</div>
+</div>
+</body></html>

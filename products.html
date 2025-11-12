@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+
+<html class="light" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>JOEGOL - Product Catalog</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#f28b0c",
+              "background-light": "#ffffff",
+              "background-dark": "#1a1a1a",
+              "card-light": "#f5f5f5",
+              "card-dark": "#2a2a2a",
+              "text-light-primary": "#333333",
+              "text-dark-primary": "#e5e5e5",
+              "text-light-secondary": "#666666",
+              "text-dark-secondary": "#b3b3b3",
+            },
+            fontFamily: {
+              "display": ["Inter", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.5rem", "lg": "0.75rem", "xl": "1rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark">
+<div class="relative flex min-h-screen w-full flex-col">
+<header class="sticky top-0 z-10 w-full bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="container mx-auto px-4">
+<div class="flex h-16 items-center justify-between border-b border-card-light dark:border-card-dark">
+<div class="flex items-center gap-4 text-text-light-primary dark:text-text-dark-primary">
+<div class="size-6 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 4H42V17.3333V30.6667H24V44H6V30.6667V17.3333H24V4Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-xl font-bold tracking-tight">JOEGOL</h2>
+</div>
+<nav class="hidden md:flex items-center gap-8 text-sm font-medium text-text-light-secondary dark:text-text-dark-secondary">
+<a class="transition-colors hover:text-text-light-primary dark:hover:text-text-dark-primary" href="#">Home</a>
+<a class="transition-colors hover:text-text-light-primary dark:hover:text-text-dark-primary" href="#">Services</a>
+<a class="font-bold text-primary transition-colors hover:text-primary/80" href="#">Products</a>
+<a class="transition-colors hover:text-text-light-primary dark:hover:text-text-dark-primary" href="#">About</a>
+<a class="transition-colors hover:text-text-light-primary dark:hover:text-text-dark-primary" href="#">Contact</a>
+</nav>
+</div>
+</div>
+</header>
+<main class="flex-1">
+<div class="container mx-auto max-w-6xl px-4 py-12 sm:py-16">
+<div class="flex flex-col gap-10">
+<div class="flex flex-col items-center text-center gap-3">
+<p class="text-4xl font-black tracking-tighter text-text-light-primary dark:text-text-dark-primary md:text-5xl">Our Product Catalog</p>
+<p class="max-w-2xl text-base text-text-light-secondary dark:text-text-dark-secondary">Explore our wide variety of high-quality products sourced internationally from China, Dubai, and France.</p>
+</div>
+<div class="flex items-center justify-center gap-2 overflow-x-auto p-1 sm:gap-3">
+<div class="flex h-9 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-full bg-primary px-4 text-white">
+<p class="text-sm font-medium">All</p>
+</div>
+<div class="flex h-9 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-full bg-card-light dark:bg-card-dark px-4 transition-colors hover:bg-gray-200 dark:hover:bg-gray-700">
+<p class="text-sm font-medium text-text-light-primary dark:text-text-dark-primary">Clothing</p>
+</div>
+<div class="flex h-9 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-full bg-card-light dark:bg-card-dark px-4 transition-colors hover:bg-gray-200 dark:hover:bg-gray-700">
+<p class="text-sm font-medium text-text-light-primary dark:text-text-dark-primary">Tech Accessories</p>
+</div>
+<div class="flex h-9 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-full bg-card-light dark:bg-card-dark px-4 transition-colors hover:bg-gray-200 dark:hover:bg-gray-700">
+<p class="text-sm font-medium text-text-light-primary dark:text-text-dark-primary">Cosmetics</p>
+</div>
+</div>
+<div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+<div class="flex flex-col gap-4 rounded-xl bg-card-light p-4 dark:bg-card-dark transition-shadow hover:shadow-lg dark:hover:shadow-black/20">
+<div class="w-full overflow-hidden rounded-lg bg-gray-200">
+<div class="aspect-square w-full bg-cover bg-center bg-no-repeat" data-alt="A man wearing a plain white cotton polo shirt against a grey background." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC7vXIMkh6y7jYHgnkBWI0gyensyQhVFDU6M0hCIlSTjd0dy0YP5pfZYOrCZDRmlLMQKcRyG2CY_cCrzilrjAFc1fx3BD0IpJNg_6PDZvjFfqa73BzkUV62r9YkZouXT-kuyv9yCVKF3Sc-P_DFndNj1k0SKE3rTsnVjz6O9HEvXG7Y4It2214jQkHIRLLgT_O8e6U9PUfXstxCCVjf-bvWGvo0d0nnYj70lah5eFUWH56z-gDQDLG7R5KbYp-3TOmWN3E_Ki4ABUg");'></div>
+</div>
+<div class="flex flex-1 flex-col justify-between gap-4">
+<div>
+<p class="text-base font-bold text-text-light-primary dark:text-text-dark-primary">Men's Cotton Polo Shirt</p>
+<p class="text-sm text-text-light-secondary dark:text-text-dark-secondary">Premium quality fabric, available in sizes S-XL.</p>
+</div>
+<button class="flex h-10 w-full cursor-pointer items-center justify-center gap-2 overflow-hidden rounded-lg bg-primary px-4 text-sm font-bold text-white transition-colors hover:bg-primary/90">
+<span class="material-symbols-outlined text-base">message</span>
+<span class="truncate">Order on WhatsApp</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-xl bg-card-light p-4 dark:bg-card-dark transition-shadow hover:shadow-lg dark:hover:shadow-black/20">
+<div class="w-full overflow-hidden rounded-lg bg-gray-200">
+<div class="aspect-square w-full bg-cover bg-center bg-no-repeat" data-alt="A pair of modern white wireless bluetooth earbuds in their charging case." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDKzWQAOIGWDy-dUaaD3HlFbw2oahdGdUOBeHfU7EcOtG_lmeK2beWNhw7SIuMYHzisM1ZGDrMohJweMLdE0luja1RWVaJUSc3ZaBQX0kyYXNI-uKZBWtvZYP1GeluscEWrEBZuoBPGQzDvdDommq-Y-qF6TJrAz2bxmhnyspJrJA8kdEASYpXiOVPEr7Y7scbhFx154zGIKbKtz7tKawPn3ia9zo6dsAdPsQB5PgKO46Gml9ht2hyV_LSX84TnE0nOTPJ-9-3lMts");'></div>
+</div>
+<div class="flex flex-1 flex-col justify-between gap-4">
+<div>
+<p class="text-base font-bold text-text-light-primary dark:text-text-dark-primary">Wireless Bluetooth Earbuds</p>
+<p class="text-sm text-text-light-secondary dark:text-text-dark-secondary">Long battery life and universal compatibility.</p>
+</div>
+<button class="flex h-10 w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-white px-4 text-sm font-bold text-text-light-primary transition-colors hover:bg-gray-100 dark:bg-gray-300 dark:text-black dark:hover:bg-gray-400">
+<span class="truncate">Request a Quote</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-xl bg-card-light p-4 dark:bg-card-dark transition-shadow hover:shadow-lg dark:hover:shadow-black/20">
+<div class="w-full overflow-hidden rounded-lg bg-gray-200">
+<div class="aspect-square w-full bg-cover bg-center bg-no-repeat" data-alt="A collection of luxury skincare products including serums and creams arranged elegantly." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCFIPGjrkSwP2B_CwIlIex6o1GXvjsjte0dvLHTC6btuLxX-sD3z8YLuhTDNE8e6ji07YpI6WOXgn69KhvrIPfJs-rQBpk_F14IoZiKTtyvrzdlcE20KWuGPf67U9Cq7XJVIo-r5cxyT02_vQWAsevcgPL3bDysb3_TExQFXQVTNaq2iaRjdPgXBQCQdOpD7--h0JOVzhxXJ_jOPjWWAN3DTTqMQ8z3yRIGWHuJ6QUIDSS0H_jkTt_eKdhHDtBXT4XOWZkVT7o0BpI");'></div>
+</div>
+<div class="flex flex-1 flex-col justify-between gap-4">
+<div>
+<p class="text-base font-bold text-text-light-primary dark:text-text-dark-primary">Luxury Skincare Set</p>
+<p class="text-sm text-text-light-secondary dark:text-text-dark-secondary">Complete set for a radiant and healthy skin.</p>
+</div>
+<button class="flex h-10 w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-white px-4 text-sm font-bold text-text-light-primary transition-colors hover:bg-gray-100 dark:bg-gray-300 dark:text-black dark:hover:bg-gray-400">
+<span class="truncate">Request a Quote</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-xl bg-card-light p-4 dark:bg-card-dark transition-shadow hover:shadow-lg dark:hover:shadow-black/20">
+<div class="w-full overflow-hidden rounded-lg bg-gray-200">
+<div class="aspect-square w-full bg-cover bg-center bg-no-repeat" data-alt="A stylish brown leather laptop bag sitting on a wooden surface." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBd6PBUM2BTJx3gyrvtdM4ibrtrHm9jF-7sekXiwx68C-XCkkzapHw2-l7BT93dKONv7vbed9F50oh_s9kGx0pViK-6ImjGyLM5FbgilW_rH3JGIqrHw_UFbIZQF7C2WqTgGmqrG_7omsCVjpdSZkGZuLmoclmG29mXWKL0Vrv8lH5YK-qnX2SZEai0cZm7ZQ7kiVCUdW9N_ei6tNmUB4R2oR9lgNSYNHyNpIB1_-2Jxgm608YOxAhpkpwI8LaUk-l65ThbengGlck");'></div>
+</div>
+<div class="flex flex-1 flex-col justify-between gap-4">
+<div>
+<p class="text-base font-bold text-text-light-primary dark:text-text-dark-primary">Leather Laptop Bag</p>
+<p class="text-sm text-text-light-secondary dark:text-text-dark-secondary">Durable and stylish, fits up to a 15-inch laptop.</p>
+</div>
+<button class="flex h-10 w-full cursor-pointer items-center justify-center gap-2 overflow-hidden rounded-lg bg-primary px-4 text-sm font-bold text-white transition-colors hover:bg-primary/90">
+<span class="material-symbols-outlined text-base">message</span>
+<span class="truncate">Order on WhatsApp</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-xl bg-card-light p-4 dark:bg-card-dark transition-shadow hover:shadow-lg dark:hover:shadow-black/20">
+<div class="w-full overflow-hidden rounded-lg bg-gray-200">
+<div class="aspect-square w-full bg-cover bg-center bg-no-repeat" data-alt="A woman wearing an elegant white fashion blouse in a professional setting." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC1nWslVEI4EnJ4h1GXk3-58moMrx7K-92bNo82g3erSpQTeltdRQ8nz6KhqwPFjpS0CIbuf1mB3vbY8yVwnEB6T0izHFpXvKJmQgW6om0mAir7Wf6dp-azxbjqYLn_5QW6e4FgIG3ssbFkHrvE_WrJbiDQdREKYqs5h6CT1fRzIuIxFN8e_U6hs_VEkNWvWXsD2R51q8zKzJkPMKmMR3qacutAJnoDZqx1MZHedf90KuLQvmBUj7hxqJeqW8Ovi9RXW_Yh4llXPOg");'></div>
+</div>
+<div class="flex flex-1 flex-col justify-between gap-4">
+<div>
+<p class="text-base font-bold text-text-light-primary dark:text-text-dark-primary">Women's Fashion Blouse</p>
+<p class="text-sm text-text-light-secondary dark:text-text-dark-secondary">Elegant design, perfect for professional settings.</p>
+</div>
+<button class="flex h-10 w-full cursor-pointer items-center justify-center gap-2 overflow-hidden rounded-lg bg-primary px-4 text-sm font-bold text-white transition-colors hover:bg-primary/90">
+<span class="material-symbols-outlined text-base">message</span>
+<span class="truncate">Order on WhatsApp</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-xl bg-card-light p-4 dark:bg-card-dark transition-shadow hover:shadow-lg dark:hover:shadow-black/20">
+<div class="w-full overflow-hidden rounded-lg bg-gray-200">
+<div class="aspect-square w-full bg-cover bg-center bg-no-repeat" data-alt="A sleek and compact portable power bank charging a smartphone." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDZCjldrKu-EZhnRjXE5KDzQPo7kk6R6iWvrS5mAui946z1YiQOKNTTnxBAuZeuZDeC5skEnzRnop8at99gAaw5zRGEZ-kRvEsrVYVZAr1pdsTS3f2SrEbwx5ryVJl-vHzUgyIe3oGu3VwwTuzqzKbBHIs_HxxrnOljT5ogBwIPxur2z_3e1EpXvjJvAnKT12LUgeA_B4Y3SBT9Bg0hoXGlLJydUDh_07VnrdcPSLdu3r0UNGV4NLkTPA8qPIDOGBTg2zFv8DVvoAg");'></div>
+</div>
+<div class="flex flex-1 flex-col justify-between gap-4">
+<div>
+<p class="text-base font-bold text-text-light-primary dark:text-text-dark-primary">Portable Power Bank</p>
+<p class="text-sm text-text-light-secondary dark:text-text-dark-secondary">High-capacity charger for all your devices on the go.</p>
+</div>
+<button class="flex h-10 w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-white px-4 text-sm font-bold text-text-light-primary transition-colors hover:bg-gray-100 dark:bg-gray-300 dark:text-black dark:hover:bg-gray-400">
+<span class="truncate">Request a Quote</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-xl bg-card-light p-4 dark:bg-card-dark transition-shadow hover:shadow-lg dark:hover:shadow-black/20">
+<div class="w-full overflow-hidden rounded-lg bg-gray-200">
+<div class="aspect-square w-full bg-cover bg-center bg-no-repeat" data-alt="An artisanal perfume bottle with a unique design on a reflective surface." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBgFnD_jqFB4hJNBNlsDKQNIHIp7G_y3_jQSztiJj9RsJZepScJzRCrDiV8210gTwGdtGCw8VeuRMzHqT682SRo38I7pPkDXGfEqK0gPcFCoMSGdiiQl8UhJ8E_MiGF8YJV09WOthdnNCH7SEd5NDBausO9x6FbXnnANayxh0dSwGF29ISwr_b3NIHa1gsHgYLTTXv54mQ2a5XHuwt56puxGWfgSZI5R9aHSWKDiSbPH-G75kQGbogFoR7TGHzy-QTSB87aR99g2wk");'></div>
+</div>
+<div class="flex flex-1 flex-col justify-between gap-4">
+<div>
+<p class="text-base font-bold text-text-light-primary dark:text-text-dark-primary">Artisanal Perfume</p>
+<p class="text-sm text-text-light-secondary dark:text-text-dark-secondary">Exclusive fragrance with long-lasting notes.</p>
+</div>
+<button class="flex h-10 w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-white px-4 text-sm font-bold text-text-light-primary transition-colors hover:bg-gray-100 dark:bg-gray-300 dark:text-black dark:hover:bg-gray-400">
+<span class="truncate">Request a Quote</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-xl bg-card-light p-4 dark:bg-card-dark transition-shadow hover:shadow-lg dark:hover:shadow-black/20">
+<div class="w-full overflow-hidden rounded-lg bg-gray-200">
+<div class="aspect-square w-full bg-cover bg-center bg-no-repeat" data-alt="A pair of designer sunglasses with dark lenses and a modern frame." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAdyBSkdcqkhVFdqMhAk4_Elvq2t90PT2kWg6T82MAhHx0bYsp5SRfKAeGIx2KDlYlBMGqBz2gJGcoa7gPtrt4KEZ5Tl4ZC3oM31LkUoHPn-qyYP33fxJHR1Hv1FqDEPVpivqINskwG96Q-QtGGlB9KdCNfoVFAVDHdCvQu9f1yCWoIUie7n4AsTRiDGZbbr20agwE68NKMf-2AjHJ5KC3OkWVMH7FWn8tdLMmvkIcjFDXcvOLcX0VJQdwU8-WaTT3Igv75v5XTVAY");'></div>
+</div>
+<div class="flex flex-1 flex-col justify-between gap-4">
+<div>
+<p class="text-base font-bold text-text-light-primary dark:text-text-dark-primary">Designer Sunglasses</p>
+<p class="text-sm text-text-light-secondary dark:text-text-dark-secondary">UV protection with a modern and timeless design.</p>
+</div>
+<button class="flex h-10 w-full cursor-pointer items-center justify-center gap-2 overflow-hidden rounded-lg bg-primary px-4 text-sm font-bold text-white transition-colors hover:bg-primary/90">
+<span class="material-symbols-outlined text-base">message</span>
+<span class="truncate">Order on WhatsApp</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</body></html>
